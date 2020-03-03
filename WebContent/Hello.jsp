@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Bonjour tout le monde ici la terre
+Bonjour tout le monde ici la planete terre
 
 <jsp:useBean id="date" class="java.util.Date"/>
 Aujourd'hui est: <fmt:formatDate value="${date}" type="date" pattern="dd-MMM-yyyy"/>
