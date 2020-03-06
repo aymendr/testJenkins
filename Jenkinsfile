@@ -1,20 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('Compile') {
+        stage('Build') {
             steps {
-                	bat 'maven clean compile'
+                bat 'echo'
             }
         }
-        stage('Test') {
-            steps {
-                	bat 'maven test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                	bat 'maven deploy'
-            }
-        }        
     }
 }
