@@ -3,8 +3,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'echo'
+                bat 'Bonjour'
             }
         }
+        stage('Test') {
+            steps {
+                bat 'testing'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                bat 'deploying'
+            }
+        }        
     }
 }
