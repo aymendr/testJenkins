@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'echo "Build"'
+                bat 'mvn clean compile'
             }
         }
         stage('test') {
             steps {
-                bat 'echo "test"'
+                bat 'mvn test'
             }
         }
         stage('Deploy') {
             steps {
-                bat 'echo "deploy"'
+                bat 'mvn deploy'
             }
         }        
     }
