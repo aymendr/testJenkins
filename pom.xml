@@ -27,6 +27,13 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>deployment</id>
+			<name>Internal Releases</name>
+			<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<!--https://search.maven.org/remotecontent?filepath=javax/servlet/jstl/1.2/jstl-1.2.jar -->
 		<dependency>
