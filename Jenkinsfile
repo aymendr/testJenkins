@@ -1,20 +1,10 @@
-pipeline {
-    agent any
-    stages {
-        stage('Build') {
-            steps {
-                bat 'mvn clean compile'
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
             }
         }
-        stage('test') {
-            steps {
-                bat 'mvn test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                bat 'mvn deploy'
-            }
-        }        
     }
 }
